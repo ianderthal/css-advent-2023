@@ -28,8 +28,8 @@
     }
 
     label:has(+ input),
-    label:has(+ input:focus) { 
-        @apply absolute top-2 left-2 text-xl 
+    label:has(+ input:focus) {
+        @apply absolute top-2 left-2 text-xl
     }
 
     input[type="text"],
@@ -67,12 +67,30 @@
         @apply content-[''] w-10 h-10 block bg-checked
     }
 
+    button[type="submit"],
+    input[type="submit"] {
+        @apply bg-supernova font-handwriting uppercase text-3xl text-black w-full rounded-full py-5
+    }
+
     svg {
         @apply fill-current
     }
  }
 
  @layer components {
+    .page-title {
+        @apply font-condensed m-0 p-0 text-center text-[116px] leading-[0.8] text-white
+    }
+    .with-rulers {
+        @apply flex items-center gap-7 justify-center
+    }
+
+    .with-rulers:before,
+    .with-rulers:after {
+        content: "";
+        @apply w-[72px] h-[6px] bg-current block
+    }
+
     .field {
         @apply mb-4
     }
@@ -101,7 +119,7 @@
 
     .bottom-nav ul {
         @apply flex flex-col gap-3
-    } 
+    }
 
     .bottom-nav ul a {
         @apply hover:text-orangeRed
