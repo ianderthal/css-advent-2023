@@ -25,6 +25,7 @@ module.exports = {
         pastelMagenta: '#ff9dbf' /* pink */,
         vistaBlue: '#94d1b4' /* light green around the avatar */,
         fireEngineRed: '#C52424' /* darker red color */,
+        bombay: '#AEAEAE' /* light gray */,
       },
       height: {
         18: '72px',
