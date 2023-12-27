@@ -89,7 +89,7 @@
     }
 
     .status-error {
-        @apply bg-orangeRed text-white rotate-45
+        @apply bg-orangeRed text-white /* rotate-45 */
     }
 
     .page-title {
