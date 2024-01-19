@@ -38,7 +38,11 @@
     input[type="password"],
     input[type="url"],
     input[type="tel"] {
-        @apply font-sans text-2xl h-[100px] w-full px-7 border-black border-2
+        @apply font-sans text-2xl h-[100px] w-full px-7 border-2
+    }
+
+    input.short {
+        @apply h-[52px] text-lg outline-none;
     }
 
     /* invalid label */
